@@ -46,13 +46,13 @@ var dashRoutes = [
   //   component: Maps,
   //   layout: "/admin"
   // },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    icon: "ui-1_bell-53",
-    component: Notifications,
-    layout: "/admin"
-  },
+  // {
+  //   path: "/notifications",
+  //   name: "Notifications",
+  //   icon: "ui-1_bell-53",
+  //   component: Notifications,
+  //   layout: "/admin"
+  // },
   {
     path: "/user-page",
     name: "User Profile",
@@ -67,12 +67,12 @@ var dashRoutes = [
     component: TableList,
     layout: "/admin"
   },
-  {
-    path: "/typography",
-    name: "Typography",
-    icon: "design-2_ruler-pencil",
-    component: Typography,
-    layout: "/admin"
-  },
+  // {
+  //   path: "/typography",
+  //   name: "Typography",
+  //   icon: "design-2_ruler-pencil",
+  //   component: Typography,
+  //   layout: "/admin"
+  // },
 ];
 export default dashRoutes;

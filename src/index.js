@@ -25,6 +25,7 @@ import "assets/scss/now-ui-dashboard.scss?v1.2.0";
 import "assets/css/demo.css";
 
 import AdminLayout from "layouts/Admin.jsx";
+import Landing from "layouts/Landing.jsx";
 
 const hist = createBrowserHistory();
 
@@ -32,7 +33,8 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/admin" render={props => <AdminLayout {...props} />} />
-      <Redirect to="/admin/dashboard" />
+      <Route path="/landing" component={Landing} />
+      <Redirect to="/landing" />
     </Switch>
   </Router>,
   document.getElementById("root")
