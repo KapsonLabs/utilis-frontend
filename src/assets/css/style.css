@@ -1,0 +1,11 @@
+body {
+    background-image: url("../img/logo_white.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trader-button{
+    margin-top: 500px;
+    margin-left: 1000px;
+    }
