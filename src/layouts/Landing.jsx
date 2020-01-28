@@ -26,16 +26,11 @@ class Landing extends React.Component{
 
     render() {
         return(
-            <div className="content">
 
-                {/* <div className="container"> 
-                    <img className="background-img" alt="..." src={require("../assets/img/logo_white.jpg")} />
-                </div> */}
-
-                <div className="container" >
-                   <button class="btn btn-success trader-button" onClick={this.launchWidget}>Launch Trader</button>
-                </div>
+            <div className="bg">
+                <button className="btn btn-success trader-button" onClick={this.launchWidget}>Launch The Trader</button>
             </div>
+
         )
     }
 }
