@@ -13,8 +13,7 @@ const hist = createBrowserHistory();
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/landing" component={Landing} />
-      <Redirect to="/landing" />
+      <Route path="/" component={Landing} />
     </Switch>
   </Router>,
   document.getElementById("root")
