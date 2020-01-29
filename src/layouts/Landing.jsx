@@ -11,11 +11,9 @@ class Landing extends React.Component{
 
     launchWidget = () => {
         window.AirSwapInstant.render(
-            { // DAI token address
+            { 
               env: 'development',
               token: '0xf68abfbdd621b5699d930da00cb673e6a913a8fe',
-              baseToken: 'WETH',
-            //   amount: '50',
               mode: 'buy',
               onComplete: txId => console.log('great success!', txId),
               onClose: () => console.log('cancelled prod trade'),
