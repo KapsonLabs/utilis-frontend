@@ -6,14 +6,14 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "./assets/css/style.css"
 
-import Landing from "./layouts/Landing.jsx";
+import Home from "./layouts/Home";
 
 const hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/" component={Landing} />
+      <Route path="/" component={Home} />
     </Switch>
   </Router>,
   document.getElementById("root")

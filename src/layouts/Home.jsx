@@ -1,11 +1,14 @@
 import React from "react";
+import { Grid, Row, Col} from "react-bootstrap";
+import Navigation from "./Navigation";
 
-class Landing extends React.Component{
+class Home extends React.Component{
 
     constructor(props){
         super(props);
         this.state = {
           connected: false,
+          token: ''
         }
     }
 
@@ -25,13 +28,20 @@ class Landing extends React.Component{
 
     render() {
         return(
-
-            <div className="bg">
-                <button className="btn btn-success trader-button" onClick={this.launchWidget}>Launch The Trader</button>
+            <div className="content">
+                <Row>
+                    <Col md="12" lg="12" sm="12">
+                        <Navigation/>
+                    </Col>
+                    <Col md="12">
+                        <div className="bg">
+                            <button className="btn btn-success trader-button" onClick={this.launchWidget}>Launch The Trader</button>
+                        </div>
+                    </Col>
+                </Row>
             </div>
-
         )
     }
 }
 
-export default Landing;
+export default Home;
