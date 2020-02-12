@@ -31,3 +31,12 @@ body, html {
 .trader-button:hover {
     background-color: purple;
 }
+
+.nav-design {
+  margin-right: 10px;
+}
+
+.link-design {
+  margin: 0 15px;
+  color: #2d2d2d !important;
+}
